@@ -11,7 +11,7 @@
  *   .pi/agents/pi-pi/*.md
  *
  * Usage:
- *   pi -e extensions/pi-pi.ts
+ *   pi -e .pi/extensions/pi-pi.ts
  */
 
 import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-agent";

@@ -1,3 +1,4 @@
-.pi/
 node_modules/
 .DS_Store
+.pi/agent-sessions/
+.pi/pi-pi-sessions/

@@ -13,7 +13,7 @@
  *   .pi/agents/teams.yaml
  *
  * Usage:
- *   pi -e extensions/agent-team.ts
+ *   pi -e .pi/extensions/agent-team.ts
  */
 
 import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-agent";
