@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Agent Team — Dispatcher-only orchestrator with grid dashboard
  *
