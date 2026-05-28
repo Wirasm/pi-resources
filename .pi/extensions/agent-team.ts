@@ -22,6 +22,7 @@ import { Text, type AutocompleteItem, truncateToWidth, visibleWidth } from "@ear
 import { spawn, type ChildProcessWithoutNullStreams } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { applyExtensionDefaults } from "./lib/themeMap.ts";
 
 interface AgentDef {
 	name: string;
@@ -522,6 +523,7 @@ export default function (pi: ExtensionAPI) {
 	});
 
 	pi.on("session_start", async (_event, ctx) => {
+		applyExtensionDefaults(import.meta.url, ctx);
 		currentCtx = ctx;
 		contextWindow = ctx.model?.contextWindow || 0;
 		loadAgents(ctx.cwd);
